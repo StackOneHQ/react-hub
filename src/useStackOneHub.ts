@@ -5,45 +5,45 @@ import { StartOptions } from './entities/StartOptions';
 type ConnectStatus = 'closed' | 'opening' | 'open';
 
 function useStackOneHub({ connectUrl }: { connectUrl?: string } = {}) {
-  const [status, setStatus] = React.useState<ConnectStatus>('closed');
-  const [options, setOptions] = React.useState<StartOptions>();
-  const [loading, error] = useScript({
-    src: connectUrl || 'https://app.stackone.com/stackone/connect.js',
-    checkForExisting: true,
-  });
+    const [status, setStatus] = React.useState<ConnectStatus>('closed');
+    const [options, setOptions] = React.useState<StartOptions>();
+    const [loading, error] = useScript({
+        src: connectUrl || 'https://app.stackone.com/stackone/connect.js',
+        checkForExisting: true,
+    });
 
-  React.useEffect(() => {
-    if (status === 'open' || status === 'closed') return;
-    if (error) {
-      if (status === 'opening') setStatus('closed');
-      return;
-    }
-    if (loading) return;
+    React.useEffect(() => {
+        if (status === 'open' || status === 'closed') return;
+        if (error) {
+            if (status === 'opening') setStatus('closed');
+            return;
+        }
+        if (loading) return;
 
-    if (status === 'opening' && options) {
-      setStatus('open');
-      Connect.start({
-        ...options,
-        onClose: () => {
-          setStatus('closed');
-          options.onCancel?.();
+        if (status === 'opening' && options) {
+            setStatus('open');
+            Connect.start({
+                ...options,
+                onClose: () => {
+                    setStatus('closed');
+                    options.onCancel?.();
+                },
+            });
+        }
+    }, [error, loading, status, options]);
+
+    const startConnect = React.useCallback(
+        (options: StartOptions) => {
+            if (error) throw 'Could not initiate StackOne Hub.';
+            if (status === 'open') return;
+
+            setOptions(options);
+            setStatus('opening');
         },
-      });
-    }
-  }, [error, loading, status, options]);
+        [loading, error],
+    );
 
-  const startConnect = React.useCallback(
-    (options: StartOptions) => {
-      if (error) throw 'Could not initiate StackOne Hub.';
-      if (status === 'open') return;
-
-      setOptions(options);
-      setStatus('opening');
-    },
-    [loading, error],
-  );
-
-  return { startConnect };
+    return { startConnect };
 }
 
 export { useStackOneHub };
