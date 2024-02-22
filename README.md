@@ -1,6 +1,6 @@
 # StackOne Hub For React
-Allow your users to quickly integrate with several services with StackOne. The `@stackone/react-hub`
-introduces an easy-to-use React hook for integrating with your web app.
+
+Allow your users to quickly integrate with several services via StackOne. The `@stackone/react-hub` introduces an easy-to-use React hook to be able to embed the StackOne integrations hub into your SaaS application.
 
 
 ## Install
@@ -53,7 +53,7 @@ startConnect(options)
 
 ## Contribute & Release
 
-This repose uses [conventional commit](https://www.conventionalcommits.org/en/v1.0.0/). The repo use semantic-release and the package version is automatically determined based on the commit messages. 
+This repose uses [conventional commit](https://www.conventionalcommits.org/en/v1.0.0/). The repo use semantic-release and the package version is automatically determined based on the commit messages.
 
 ## Release
 
