@@ -1,3 +1,10 @@
+## [1.0.11](https://github.com/StackOneHQ/react-hub/compare/v1.0.10...v1.0.11) (2023-03-29)
+
+
+### Bug Fixes
+
+* update tsconfig target and remove dist folder from git repo ([#8](https://github.com/StackOneHQ/react-hub/issues/8)) ([7b25db8](https://github.com/StackOneHQ/react-hub/commit/7b25db84b0084258ce031130c572de224625efbc))
+
 ## [1.0.10](https://github.com/StackOneHQ/react-hub/compare/v1.0.9...v1.0.10) (2023-03-14)
 
 
