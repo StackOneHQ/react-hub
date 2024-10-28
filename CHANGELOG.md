@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/StackOneHQ/react-hub/compare/v1.0.12...v1.1.0) (2024-10-28)
+
+
+### Features
+
+* release hub styles ([#17](https://github.com/StackOneHQ/react-hub/issues/17)) ([7ead4fb](https://github.com/StackOneHQ/react-hub/commit/7ead4fb90516f7ce9eff508d4d3e31e1c4a5bf09))
+
 ## [1.0.12](https://github.com/StackOneHQ/react-hub/compare/v1.0.11...v1.0.12) (2024-02-23)
 
 
