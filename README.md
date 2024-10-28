@@ -45,7 +45,6 @@ startConnect(options)
 
 ### Style Options
 You may pass a few style options to customize the Connect flow.
-
 All of the following are optional.
 ```jsx
 // Example of styles object
