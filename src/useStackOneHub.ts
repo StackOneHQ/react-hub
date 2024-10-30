@@ -26,6 +26,10 @@ function useStackOneHub({ connectUrl }: { connectUrl?: string } = {}) {
                 ...options,
                 onClose: () => {
                     setStatus('closed');
+                    options.onClose?.();
+                },
+                onCancel: () => {
+                    setStatus('closed');
                     options.onCancel?.();
                 },
             });
