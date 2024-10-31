@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/StackOneHQ/react-hub/compare/v1.1.0...v1.1.1) (2024-10-31)
+
+
+### Bug Fixes
+
+* event handlers ([#19](https://github.com/StackOneHQ/react-hub/issues/19)) ([6813d75](https://github.com/StackOneHQ/react-hub/commit/6813d75525c458486efa95b8ece6f14e1d6b9419))
+
 # [1.1.0](https://github.com/StackOneHQ/react-hub/compare/v1.0.12...v1.1.0) (2024-10-28)
 
 
