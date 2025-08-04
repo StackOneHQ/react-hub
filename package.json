@@ -1,6 +1,6 @@
 {
     "name": "@stackone/react-hub",
-    "version": "1.1.1",
+    "version": "1.2.0",
     "main": "dist/index.cjs.js",
     "module": "dist/index.esm.js",
     "author": "StackOne",
@@ -26,7 +26,7 @@
         "@rollup/plugin-terser": "^0.1.0",
         "@semantic-release/changelog": "^6.0.2",
         "@semantic-release/git": "^10.0.1",
-        "@types/react": "^18.0.25",
+        "@types/react": "^19.0.0",
         "@typescript-eslint/eslint-plugin": "^5.42.1",
         "@typescript-eslint/parser": "^5.42.1",
         "babel-plugin-add-module-exports": "^1.0.4",
@@ -36,7 +36,8 @@
         "eslint-plugin-prettier": "^4.2.1",
         "husky": "^8.0.3",
         "prettier": "^2.7.1",
-        "react": "^18.2.0",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
         "rollup": "^3.2.5",
         "rollup-plugin-peer-deps-external": "^2.2.4",
         "rollup-plugin-typescript2": "^0.34.1",
@@ -48,7 +49,8 @@
         "react-script-hook": "^1.7.2"
     },
     "peerDependencies": {
-        "react": "^16.8.6 || 17 - 18"
+        "react": "^16.8.6 || 17 - 18 || ^19.0.0",
+        "react-dom": "^16.8.6 || 17 - 18 || ^19.0.0"
     },
     "files": [
         "dist"

@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/StackOneHQ/react-hub/compare/v1.1.1...v1.2.0) (2025-01-04)
+
+
+### Features
+
+* add React 19 support to peerDependencies ([#XX](https://github.com/StackOneHQ/react-hub/issues/XX)) - Added support for React 19 in peer dependencies to enable installation in projects using React 19+
+
 ## [1.1.1](https://github.com/StackOneHQ/react-hub/compare/v1.1.0...v1.1.1) (2024-10-31)
 
 
