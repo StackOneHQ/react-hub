@@ -70,6 +70,6 @@
     },
     "homepage": "https://github.com/StackOneHQ/react-hub#readme",
     "volta": {
-        "node": "18.14.0"
+        "node": "22.23.4"
     }
 }
